@@ -30,7 +30,7 @@ const Tabs = () => {
   return (
     <Fragment>
       <form onSubmit={handleSubmit} className="max-w-2xl mx-auto mb-4">
-        <div className="mb-3">
+        <div className="mb-3 w-3/6">
           <label
             htmlFor="property"
             className="font-medium text-gray-700 text-sm"
@@ -52,48 +52,51 @@ const Tabs = () => {
             <option value={2}>Commercial</option>
           </select>
         </div>
-        <div className="mb-3">
-          <label
-            htmlFor="bathrooms"
-            className="font-medium text-gray-700 text-sm"
-          >
-            Number of Bathrooms
-          </label>
-          <input
-            id="bathrooms"
-            name="bathrooms"
-            type="number"
-            value={bathrooms}
-            min={1}
-            onChange={(e) => setBathrooms(e.target.value)}
-            className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+          <div className="mb-3">
+            <label
+              htmlFor="bathrooms"
+              className="font-medium text-gray-700 text-sm"
+            >
+              Number of Bathrooms
+            </label>
+            <input
+              id="bathrooms"
+              name="bathrooms"
+              type="number"
+              value={bathrooms}
+              min={1}
+              onChange={(e) => setBathrooms(e.target.value)}
+              className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 
             placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500
             focus:border-indigo-500 focus:z-10 sm:text-sm"
-          />
-        </div>
-        <div className="mb-3">
-          <label
-            htmlFor="kitchens"
-            className="font-medium text-gray-700 text-sm"
-          >
-            Number of Kitchens
-          </label>
-          <input
-            id="kitchens"
-            name="kitchens"
-            type="number"
-            value={kitchens}
-            min={0}
-            onChange={(e) => setKitchens(e.target.value)}
-            className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 
+            />
+          </div>
+          <div className="mb-3">
+            <label
+              htmlFor="kitchens"
+              className="font-medium text-gray-700 text-sm"
+            >
+              Number of Kitchens
+            </label>
+            <input
+              id="kitchens"
+              name="kitchens"
+              type="number"
+              value={kitchens}
+              min={0}
+              onChange={(e) => setKitchens(e.target.value)}
+              className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 
             placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500
             focus:border-indigo-500 focus:z-10 sm:text-sm"
-          />
+            />
+          </div>
         </div>
+
         <div>
           <input
             type="submit"
-            className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-2 md:text-lg md:px-10"
+            className="w-full md:w-3/6 flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-2 md:text-lg md:px-10"
             value="Save"
           />
         </div>
