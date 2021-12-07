@@ -28,8 +28,8 @@ const Tabs = () => {
   };
 
   return (
-    <Fragment>
-      <form onSubmit={handleSubmit} className="max-w-2xl mx-auto mb-4">
+    <div className="bg-gray-300 py-10">
+      <form onSubmit={handleSubmit} className="max-w-5xl  mx-auto mb-4">
         <div className="mb-3 w-3/6">
           <label
             htmlFor="property"
@@ -44,7 +44,7 @@ const Tabs = () => {
             value={type}
             onChange={(e) => setType(e.target.value)}
             required
-            className="appearance-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 
+            className="appearance-none relative block w-full px-3 py-2 bg-gray-300 border border-gray-500 placeholder-gray-500 text-gray-900 
             rounded focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
             placeholder="Residential"
           >
@@ -67,7 +67,7 @@ const Tabs = () => {
               value={bathrooms}
               min={1}
               onChange={(e) => setBathrooms(e.target.value)}
-              className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 
+              className="appearance-none rounded-none relative block w-full px-3 py-2 bg-gray-300 border border-gray-500 
             placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500
             focus:border-indigo-500 focus:z-10 sm:text-sm"
             />
@@ -86,7 +86,7 @@ const Tabs = () => {
               value={kitchens}
               min={0}
               onChange={(e) => setKitchens(e.target.value)}
-              className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 
+              className="appearance-none rounded-none relative block w-full px-3 py-2 bg-gray-300 border border-gray-500 
             placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500
             focus:border-indigo-500 focus:z-10 sm:text-sm"
             />
@@ -96,12 +96,12 @@ const Tabs = () => {
         <div>
           <input
             type="submit"
-            className="w-full md:w-3/6 flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-2 md:text-lg md:px-10"
-            value="Save"
+            className="w-full md:w-3/6 flex items-center justify-center px-8 py-4 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-2xl md:px-10"
+            value="Get Your Result"
           />
         </div>
       </form>
-    </Fragment>
+    </div>
   );
 };
 
