@@ -43,7 +43,7 @@ export default function Contact() {
                         Email
                       </h2>
                       <h2 className="text-gray-800 text-base md:text-lg leading-8 tracking-wider mt-2">
-                        htowater24@example.com
+                        hotwater24@example.com
                       </h2>
                     </div>
                   </div>
@@ -52,7 +52,7 @@ export default function Contact() {
             </div>
             <div className="w-full lg:w-1/2  lg:pl-24 bg-red-500">
               <div className="flex flex-col items-start xl:justify-start 2xl:justify-end xl:px-0 px-4">
-                <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold tracking-wider text-white">
+                <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold tracking-wider text-white font-display">
                   Contact Us
                 </h1>
                 <div className="w-full 2xl:w-8/12 mt-3">

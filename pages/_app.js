@@ -1,5 +1,5 @@
 import { Fragment } from 'react';
-import 'tailwindcss/tailwind.css';
+import '../styles/globals.css';
 import Footer from '../components/Layout/Footer';
 import Navbar from '../components/Layout/Navbar';
 

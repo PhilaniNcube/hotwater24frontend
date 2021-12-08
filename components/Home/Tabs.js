@@ -28,7 +28,7 @@ const Tabs = () => {
   };
 
   return (
-    <div className="bg-gray-300 py-10">
+    <div className="bg-white py-10">
       <form onSubmit={handleSubmit} className="max-w-5xl  mx-auto mb-4">
         <div className="mb-3 w-3/6">
           <label
